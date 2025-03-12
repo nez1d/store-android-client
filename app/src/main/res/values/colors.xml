@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightBackgroundColor">#FFF</color>
+    <color name="darkBackgroundColor">#000</color>
+    <color name="textColorMain">#000</color>
+    <color name="textColorHint">#5E5E5E</color>
+    <color name="darkBtnColor">#000</color>
+    <color name="login_link_btn">#1F41BB</color>
+    <color name="have_account_text_color">#494949</color>
+
+</resources>

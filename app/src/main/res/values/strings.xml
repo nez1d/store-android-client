@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShopDevelop.Mobile.Android.App</string>
+    <string name="registerTitleText">Register</string>
+    <string name="registerText">Create an account so you can start shopping.</string>
+    <string name="registerBasicInfoText">BASIC INFORMATION</string>
+    <string name="hint_user_email_input">Email</string>
+    <string name="hint_user_pass_input">Password</string>
+    <string name="hint_user_repeat_pass_input">Repeat Password</string>
+    <string name="text_have_account">Already have an account?</string>
+    <string name="text_register_btn_submit">Register</string>
+    <string name="toast_register_success_message">The registration is success</string>
+    <string name="toast_register_pass_equal_error">The password is not equal confirm password!</string>
+    <string name="toast_register_pass_empty_error">The password be empty!</string>
+    <string name="toast_register_email_empty_error">The email be empty!</string>
+</resources>
