@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundColor"
+    tools:context=".activity_not_found_page">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-50sp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TitleText"
+            android:text="@string/page_not_found_main_title"
+            android:textSize="110sp"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginBottom="-50sp"/>
+
+        <TextView
+            style="@style/TitleText"
+            android:text="@string/page_not_found_title"
+            android:textSize="30sp" />
+
+        <TextView
+            style="@style/MainText"
+            android:layout_marginTop="5sp"
+            android:layout_marginHorizontal="25sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/page_not_found_subtitle"
+            android:textAlignment="center"
+            android:textColor="#111827"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/notFoundToHome"
+            style="@style/BaseDarkBtn"
+            android:layout_marginTop="50sp"
+            android:layout_marginHorizontal="25sp"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:text="@string/page_not_found_btn_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -8,105 +8,117 @@
     android:background="@color/lightBackgroundColor"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/register_title"
-        style="@style/MainTitleText"
-        android:text="@string/loginTitleText"
-        android:textAlignment="center"
-        android:layout_marginTop="50sp"/>
-
-    <TextView
-        android:id="@+id/register_text"
-        style="@style/MainText"
-        android:layout_marginTop="25sp"
-        android:layout_below="@+id/register_title"
-        android:text="@string/loginText"
-        android:textAlignment="center"
-        android:width="200sp"
-        android:layout_marginHorizontal="20sp"/>
-
-    <TextView
-        android:id="@+id/register_subtext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/register_text"
-        android:layout_marginHorizontal="16sp"
-        android:layout_marginTop="60sp"
-        android:width="200sp"
-        android:fontFamily="@font/dm_sans_bold"
-        android:text="@string/registerBasicInfoText"
-        android:textAlignment="center"
-        android:textColor="@color/textColorMain"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/reg_email_input"
-        style="@style/InputBase"
-        android:layout_below="@+id/register_subtext"
-        android:layout_marginHorizontal="25sp"
-        android:layout_marginTop="10sp"
-        android:autofillHints=""
-        android:hint="@string/hint_user_email_input"
-        android:background="@drawable/border"
-        android:inputType="textEmailAddress" />
-
-
-    <EditText
-        android:id="@+id/log_password_input"
-        style="@style/InputBase"
-        android:layout_below="@+id/reg_email_input"
-        android:layout_marginHorizontal="25sp"
-        android:layout_marginTop="10sp"
-        android:autofillHints=""
-        android:hint="@string/hint_user_pass_input"
-        android:inputType="textPassword" />
-
     <LinearLayout
-        android:id="@+id/forgot_pass_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/log_password_input"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:layout_marginTop="0sp"
-        android:layout_marginHorizontal="25sp"
-        android:gravity="right">
-
-        <Button
-            android:id="@+id/forgot_pass_btn"
-            style="@style/LinkRegisterBtn"
-            android:text="@string/forgotPassBtn"
-            android:textAlignment="textEnd"
-            android:textColor="@color/textColorHint"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/forgot_pass_layout"
-        android:orientation="vertical"
-        android:layout_marginTop="10sp"
-        android:layout_marginHorizontal="25sp"
-        android:gravity="center">
+        android:layout_marginTop="78sp"
+        android:gravity="top">
 
         <TextView
-            android:id="@+id/have_account_text"
-            style="@style/LinkRegisterText"
-            android:text="@string/text_have_account"/>
+            android:id="@+id/login_title"
+            style="@style/TitleText"
+            android:text="@string/auth_login_page_title"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/login_subtitle"
+            style="@style/MainText"
+            android:text="@string/auth_login_page_subtitle"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginTop="5sp"/>
+
+        <TextView
+            android:id="@+id/login_input_group_name"
+            style="@style/MainText"
+            android:text="@string/auth_register_page_base_info_text"
+            android:layout_marginHorizontal="25sp"
+            android:textAlignment="viewStart"
+            android:fontFamily="@font/dm_sans_bold"
+            android:layout_marginTop="50sp"/>
+
+        <EditText
+            android:id="@+id/login_email_input"
+            style="@style/InputBase"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:inputType="textEmailAddress"
+            android:hint="@string/auth_page_email_hint" />
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/InputBase"
+            android:layout_marginHorizontal="25sp"
+            android:layout_marginTop="10sp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:inputType="textPassword"
+            android:hint="@string/auth_page_password_hint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:layout_marginHorizontal="25sp"
+            android:gravity="left">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp"
+                android:buttonTint="@color/textColorDark"
+                android:fontFamily="@font/dm_sans" />
+
+            <Button
+                android:id="@+id/login_forgot_pass_btn"
+                style="@style/LinkRegisterBtn"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textColor="@color/text_color_gray"
+                android:text="@string/auth_login_page_forgot_pass_btn"/>
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/login_link_btn"
-            style="@style/LinkRegisterBtn"
-            android:text="@string/registerBtnText"/>
-    </LinearLayout>
+            android:id="@+id/signInBtn"
+            style="@style/BaseDarkBtn"
+            android:layout_marginTop="40sp"
+            android:layout_marginHorizontal="25sp"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:text="@string/auth_login_page_sign_in_btn" />
 
-    <Button
-        android:id="@+id/login_submit_btn"
-        style="@style/MainBtn"
-        android:layout_below="@+id/log_password_input"
-        android:layout_marginHorizontal="25sp"
-        android:layout_marginTop="100dp"
-        android:paddingVertical="15dp"
-        android:text="@string/text_login_btn_submit"
-        app:cornerRadius="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp"
+            android:layout_marginHorizontal="25sp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dont_have_account_text"
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:layout_marginRight="5sp"
+                android:text="@string/auth_login_page_reg_text"/>
+
+            <Button
+                android:id="@+id/register_link_btn"
+                style="@style/LinkRegisterBtn"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:text="@string/auth_login_page_reg_link"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="InputBase" parent="">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/textColorMain</item>
-        <item name="android:textColorHint">@color/textColorHint</item>
-        <item name="android:fontFamily">@font/dm_sans</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:minHeight">40dp</item>
-        <item name="android:background">@drawable/border</item>
-        <item name="android:paddingLeft">10sp</item>
-        <item name="android:paddingRight">10sp</item>
-    </style>
 
-    <style name="MainTitleText" parent="">
-        <item name="android:fontFamily">@font/dm_sans_semibold</item>
-        <item name="android:textColor">@color/textColorMain</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="MainText" parent="">
-        <item name="android:fontFamily">@font/dm_sans</item>
-        <item name="android:textColor">@color/textColorMain</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="MainBtn" >
+    <style name="BaseDarkBtn">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:backgroundTint">@color/darkBtnColor</item>
+        <item name="android:background">@drawable/button_dark</item>
         <item name="android:fontFamily">@font/dm_sans</item>
         <item name="android:textColor">@color/lightBackgroundColor</item>
         <item name="android:textSize">16dp</item>
+        <item name="android:height">55sp</item>
     </style>
 
-    <style name="LinkRegisterText" >
+    <style name="BaseLightBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_light</item>
+        <item name="android:fontFamily">@font/dm_sans_semibold</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:height">55sp</item>
+    </style>
+
+    <style name="TitleText" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="MainText" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="InputBase" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:background">@drawable/input_border</item>
+        <item name="android:paddingLeft">15sp</item>
+        <item name="android:paddingRight">15sp</item>
+    </style>
+
+    <style name="CodeInputBase" parent="">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/have_account_text_color</item>
-        <item name="android:fontFamily">@font/dm_sans_bold</item>
-        <item name="android:textSize">16dp</item>
-        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:minHeight">55dp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:background">@drawable/input_border</item>
+        <item name="android:paddingLeft">15sp</item>
+        <item name="android:paddingRight">15sp</item>
     </style>
 
     <style name="LinkRegisterBtn">
@@ -60,6 +83,33 @@
         <item name="android:textSize">16dp</item>
     </style>
 
+
+
+
+    <!--<style name="InputBase" parent="">
+
+
+
+
+
+    <style name="LinkRegisterText" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/have_account_text_color</item>
+        <item name="android:fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+
+    </style>
+
+
+
+
+
+
+
     <style name="SearchInput" parent="">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -68,7 +118,6 @@
         <item name="android:fontFamily">@font/dm_sans</item>
         <item name="android:maxLines">1</item>
         <item name="android:minHeight">50dp</item>
-        <item name="android:background">@drawable/header_search_border</item>
         <item name="android:paddingLeft">20sp</item>
         <item name="android:paddingRight">20sp</item>
     </style>
@@ -81,5 +130,5 @@
         <item name="android:fontFamily">@font/dm_sans</item>
         <item name="android:textColor">@color/lightBackgroundColor</item>
         <item name="android:textSize">16dp</item>
-    </style>
+    </style>-->
 </resources>

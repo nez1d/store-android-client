@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundColor"
+    tools:context=".activity_forgot_pass_enter_code">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="77sp"
+        android:gravity="top">
+
+        <TextView
+            style="@style/TitleText"
+            android:text="@string/reg_get_code_title"
+            android:textSize="30sp" />
+
+        <TextView
+            style="@style/MainText"
+            android:layout_marginTop="5sp"
+            android:layout_marginHorizontal="25sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/confirm_get_code_subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/darkBackgroundColor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40sp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/code_to_forgot_input_1"
+                style="@style/CodeInputBase"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15sp"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/code_to_forgot_input_2"
+                style="@style/CodeInputBase"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15sp"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/code_to_forgot_input_3"
+                style="@style/CodeInputBase"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15sp"
+                android:hint="" />
+
+            <EditText
+                android:id="@+id/code_to_forgot_input_4"
+                style="@style/CodeInputBase"
+                android:autofillHints=""
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15sp"
+                android:hint="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verifyCodeForgotBtn"
+            style="@style/BaseDarkBtn"
+            android:layout_marginTop="50sp"
+            android:layout_marginHorizontal="25sp"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:text="@string/reg_get_code_btn_text" />
+
+        <LinearLayout
+            android:id="@+id/layout_send_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35sp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="@string/reg_get_code_send_code_again"/>
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:fontFamily="@font/dm_sans"
+                android:layout_marginLeft="5sp"
+                android:text="@string/reg_get_code_send_code_timer"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/layout_resend_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35sp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_color_gray"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="@string/reg_get_code_didnt_receive_text"/>
+
+            <Button
+                android:id="@+id/register_link_btn"
+                style="@style/LinkRegisterBtn"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5sp"
+                android:stateListAnimator="@null"
+                android:text="@string/reg_get_code_resend_code_btn_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_error_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35sp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/MainText"
+                android:layout_width="wrap_content"
+                android:textColor="@string/text_error"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/reg_get_code_wrong_code_message"/>
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

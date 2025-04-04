@@ -1,83 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBackgroundColor"
-    tools:context=".Catalog">
+    tools:context=".activity_catalog">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/top_search_panel">
-
-        <EditText
-            android:id="@+id/header_search_input"
-            style="@style/SearchInput"
-            android:layout_marginHorizontal="25sp"
-            android:layout_marginTop="50sp"
-            android:autofillHints=""
-            android:hint="@string/header_search_text"
-            android:background="@drawable/header_search_border"
-            android:inputType="text"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/center_panel"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/top_search_panel"
-        android:orientation="horizontal"
-        android:layout_height="match_parent">
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/bottom_panel"
-        android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/center_panel"
-        android:layout_marginTop="-120dp"
-        android:paddingVertical="25sp"
-        android:paddingHorizontal="30sp"
-        android:background="#F5F5F5"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <Button
-            android:id="@+id/login_submit_btn"
-            style="@style/BottomMenuBtn"
-            android:layout_marginHorizontal="0sp"
-            android:layout_marginTop="0dp"
-            android:paddingVertical="0dp"
-            app:cornerRadius="18dp"
-            android:text="T" />
-
-        <Button
-            style="@style/BottomMenuBtn"
-            android:layout_marginHorizontal="0sp"
-            android:layout_marginTop="0dp"
-            android:paddingVertical="0dp"
-            app:cornerRadius="18dp"
-            android:text="T" />
-
-        <Button
-            style="@style/BottomMenuBtn"
-            android:layout_marginHorizontal="0sp"
-            android:layout_marginTop="0dp"
-            android:paddingVertical="0dp"
-            app:cornerRadius="18dp"
-            android:text="T" />
-
-        <Button
-            style="@style/BottomMenuBtn"
-            android:layout_marginHorizontal="0sp"
-            android:layout_marginTop="0dp"
-            android:paddingVertical="0dp"
-            app:cornerRadius="18dp"
-            android:text="T" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

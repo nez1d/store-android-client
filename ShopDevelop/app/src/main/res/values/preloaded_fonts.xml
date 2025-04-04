@@ -7,5 +7,6 @@
         <item>@font/dm_sans_medium</item>
         <item>@font/dm_sans_semibold</item>
         <item>@font/inter_thin</item>
+        <item>@font/poppins_bold</item>
     </array>
 </resources>

@@ -32,32 +32,32 @@ public class Register extends AppCompatActivity {
         ConfirmPasswordText = findViewById(R.id.reg_repeat_password_input);
 
         LoginLinkBtn = findViewById(R.id.login_link_btn);
-        SendBtn = findViewById(R.id.register_submit_btn);
+        SendBtn = findViewById(R.id.registerBtn);
 
         SendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 if(EmailText.getText().toString().trim().isEmpty()) {
-                    Toast.makeText(Register.this, R.string.toast_register_email_empty_error, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Email is empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if(PasswordText.getText().toString().trim().isEmpty()) {
-                    Toast.makeText(Register.this, R.string.toast_register_pass_empty_error, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Password is empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if(!PasswordText.getText().toString().equals(ConfirmPasswordText.getText().toString())) {
-                    Toast.makeText(Register.this, R.string.toast_register_pass_equal_error, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Password Error", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 UserInfoMock.UserEmail = EmailText.toString();
                 UserInfoMock.UserPassword = PasswordText.toString();
-                Toast.makeText(Register.this, R.string.toast_register_success_message, Toast.LENGTH_LONG).show();
+                Toast.makeText(Register.this, "Success", Toast.LENGTH_LONG).show();
 
-                startActivity(new Intent(getApplicationContext(), Catalog.class));
+                startActivity(new Intent(getApplicationContext(), activity_enter_code_to_register.class));
                 overridePendingTransition(0, 0);
                 finish();
             }

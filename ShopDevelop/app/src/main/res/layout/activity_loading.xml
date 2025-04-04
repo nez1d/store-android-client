@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBackgroundColor"
+    tools:context=".activity_loading">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/loading_page_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_page_img_1"
+            android:layout_marginHorizontal="30sp"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_marginTop="15sp"
+                android:text="@string/loading_page_text_left"
+                android:layout_marginRight="5sp"
+                android:textSize="30sp" />
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_marginTop="15sp"
+                android:text="@string/loading_page_text_center"
+                android:layout_marginRight="5sp"
+                android:textColor="#8774E1"
+                android:textSize="30sp" />
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/loading_page_text_right"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
